@@ -2,8 +2,8 @@ Realm realm = Realm.getDefaultInstance();
 
 
 // exemplo 1
-RealmResults<Person> teenagers = realm.where(Person.class).between("age", 13, 20).findAll();
-Person firstJohn = teenagers.where().equalTo("name", "John").findFirst();
+RealmResults<Pessoa> jovens = realm.where(Pessoa.class).between("idade", 13, 20).findAll();
+Pessoa john = jovens.where().equalTo("nome", "John").findFirst();
 
 // exemplo 2
 RealmResults<Pessoa> pessoas = realm.where(Pessoa.class).findAll();
