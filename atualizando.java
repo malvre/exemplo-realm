@@ -1,6 +1,6 @@
 Realm realm = Realm.getDefaultInstance();
 
-final Pessoa tony = realm.where(Pessoa.class).equalTo("id", 1).findFirst();
+final Pessoa tony = realm.where(Pessoa.class).equalTo("nome", "Tony Stark").findFirst();
 
 realm.executeTransaction(new Realm.Transaction() {
 	@Override
